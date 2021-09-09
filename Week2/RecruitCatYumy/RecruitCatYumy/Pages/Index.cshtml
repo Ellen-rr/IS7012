@@ -1,0 +1,335 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+            position: relative;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+            float: left;
+            width:16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+        }
+
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+
+        .demo-content {
+            padding:15px;
+            font-size:18px;
+            
+        }
+        .col-md-2 {
+           float:left;
+        }
+       
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+
+        <h1><b>Welcome!</b>  <em>RR virtual studio</em></h1>
+        <p>We deliver your happyiness <img src="~/image/smile.png" style="height:50px"></p>
+
+    </div>
+
+    <div style="padding-top:100px">
+        <h4>What we offer?</h4>
+
+        <div class="col-md-2">
+            <div class="demo-content"><h3>Portrait</h3></div>
+          
+        </div>
+
+        <div class="col-md-2">
+            <div class="demo-content"><h3>Event</h3></div>
+           
+        </div>
+
+        <div class="col-md-2">
+            <div class="demo-content"><h3>Family</h3></div>
+         
+        </div>
+
+        <div class="col-md-2">
+            <div class="demo-content"><h3>Real Estate</h3></div>
+          
+        </div>
+
+        <div class="col-md-2">
+            <div class="demo-content"><h3>Product</h3></div>
+            
+        </div>
+
+        <div class="col-md-2">
+            <div class="demo-content"><h3>Graduation</h3></div>
+            
+        </div>
+  
+    </div>
+
+  
+
+    <div class="container" style="padding-bottom:100px;">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="~/image/boat1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="~/image/bridge.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="~/image/children1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="~/image/food1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="~/image/trip1.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="~/image/yuki2.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="~/image/boat1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Boat">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="~/image/bridge.jpg" style="width:100%" onclick="currentSlide(2)" alt="bridge">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="~/image/children1.jpg" style="width:100%" onclick="currentSlide(3)" alt="children">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="~/image/food1.jpg" style="width:100%" onclick="currentSlide(4)" alt="food">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="~/image/trip1.jpg" style="width:100%" onclick="currentSlide(5)" alt="trip to LA">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="~/image/yuki2.jpg" style="width:100%" onclick="currentSlide(6)" alt="yuki">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="padding-top:30px">
+
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4"></div>
+
+        <div class="col-md-4"></div>
+
+    </div>
+
+
+    <div style="padding-top:10px;text-align:center">
+
+        <h1 style="font-family:'Gill Sans'">HOW IT WORKS</h1>
+        <h6>We are here to help!</h6>
+
+    </div>
+
+    <div class="row" style="padding-top:30px">
+
+        <div class="col-md-4" style="background-color:#ffcc99">
+            <div class="demo-content"><h3>We will match you to the best photographer every time</h3></div>
+            <p>You let us know when, where and why, and we will take care of the rest. Photographer will recommend the best-matched photographer in realtime</p>
+        </div>
+
+        <div class="col-md-4" style="background-color:#FFFfcc">
+            <div class="demo-content"><h3>All you need to do is turn up</h3></div>
+            <p>Your Photographer will bring their professional-grade equipment to your location at your chosen time, and you can relaz in the hands of an experienced creative. </p>
+        </div>
+
+        <div class="col-md-4" style="background-color:#99cccc">
+            <div class="demo-content"><h3>Edited Photos ready to share and use in record time!</h3></div>
+            <p>Within 48 hours of your shoot, your edited photos will be delivered via the photographer app, with one click sharing or downloading</p>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Contact Container -->
+    <div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+        <div class="w3-row">
+            <div class="w3-col m5">
+                <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Us</span></div>
+                <h3>Address</h3>
+                <p>1233 happy street</p>
+                <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Cincinnati, US</p>
+                <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +00 1515151515</p>
+                <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  test@test.com</p>
+            </div>
+            <div class="w3-col m7">
+                <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input" type="text" name="Message" required>
+                    </div>
+                    <input class="w3-check" type="checkbox" checked name="Like">
+                    <label>I Like it!</label>
+                    <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+</body>
+</html>
