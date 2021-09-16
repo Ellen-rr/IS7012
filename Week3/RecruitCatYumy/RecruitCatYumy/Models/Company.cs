@@ -18,6 +18,7 @@ namespace RecruitCatYumy.Models
         public int IndustryId { get; set; }
         public string Location { get; set; }
         public decimal? Income { get; set; }
+        public int NumberOfEmployee { get; set; }
 
     }
 }

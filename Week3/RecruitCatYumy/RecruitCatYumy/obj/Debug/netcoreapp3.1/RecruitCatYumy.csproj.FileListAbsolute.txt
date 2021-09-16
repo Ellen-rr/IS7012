@@ -418,6 +418,11 @@ C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.
 C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Companies\Index.cshtml.g.cs
 C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
+C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Create.cshtml.g.cs
+C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Delete.cshtml.g.cs
+C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Details.cshtml.g.cs
+C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Edit.cshtml.g.cs
+C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Index.cshtml.g.cs
 C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\JobTitles\Create.cshtml.g.cs
 C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\JobTitles\Delete.cshtml.g.cs
 C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\JobTitles\Details.cshtml.g.cs
@@ -436,8 +441,3 @@ C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.
 C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\RecruitCatYumy.dll
 C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\RecruitCatYumy.pdb
 C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\RecruitCatYumy.genruntimeconfig.cache
-C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Create.cshtml.g.cs
-C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Delete.cshtml.g.cs
-C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Details.cshtml.g.cs
-C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Edit.cshtml.g.cs
-C:\Users\75074\source\repos\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Razor\Pages\Industries\Index.cshtml.g.cs
