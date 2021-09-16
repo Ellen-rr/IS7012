@@ -17,7 +17,7 @@ namespace RecruitCatYumy.Models
         public Industry Industry { get; set; }
         public int IndustryId { get; set; }
         public DateTime? StartDate { get; set; }
-        public int PhoneNumber { get; set; }
+        public String PhoneNumber { get; set; }
         public string Address { get; set; }
         public DateTime DateOfBirth { get; set; }
 
