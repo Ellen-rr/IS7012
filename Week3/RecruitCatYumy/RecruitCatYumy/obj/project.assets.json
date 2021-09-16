@@ -8609,11 +8609,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\75074\\source\\repos\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj",
+      "projectUniqueName": "D:\\github\\IS7012\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj",
       "projectName": "RecruitCatYumy",
-      "projectPath": "C:\\Users\\75074\\source\\repos\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj",
+      "projectPath": "D:\\github\\IS7012\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj",
       "packagesPath": "C:\\Users\\75074\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\75074\\source\\repos\\RecruitCatYumy\\RecruitCatYumy\\obj\\",
+      "outputPath": "D:\\github\\IS7012\\Week3\\RecruitCatYumy\\RecruitCatYumy\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\75074\\AppData\\Roaming\\NuGet\\NuGet.Config",
