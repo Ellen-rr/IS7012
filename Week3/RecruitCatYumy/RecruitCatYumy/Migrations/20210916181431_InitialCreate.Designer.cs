@@ -10,7 +10,7 @@ using RecruitCatYumy.Data;
 namespace RecruitCatYumy.Migrations
 {
     [DbContext(typeof(RecruitCatYumyContext))]
-    [Migration("20210916180455_InitialCreate")]
+    [Migration("20210916181431_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
