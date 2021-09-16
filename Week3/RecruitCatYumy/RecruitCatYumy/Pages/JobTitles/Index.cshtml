@@ -1,0 +1,48 @@
+﻿@page
+@model RecruitCatYumy.Pages.JobTitles.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].TheJobTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].MinimumSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].MaximumSalary)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.JobTitle) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TheJobTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinimumSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaximumSalary)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.JobTitleId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.JobTitleId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.JobTitleId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
