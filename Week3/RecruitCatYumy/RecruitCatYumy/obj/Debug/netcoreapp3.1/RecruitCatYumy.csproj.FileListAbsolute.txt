@@ -884,3 +884,11 @@ D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\Rec
 D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\RecruitCatYumy.dll
 D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\RecruitCatYumy.pdb
 D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\RecruitCatYumy.genruntimeconfig.cache
+D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\bin\Debug\netcoreapp3.1\CsvHelper.dll
+D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\bin\Debug\netcoreapp3.1\EPPlus.dll
+D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\bin\Debug\netcoreapp3.1\FileContextCore.dll
+D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\bin\Debug\netcoreapp3.1\Gtt.Mem.Client.dll
+D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\bin\Debug\netcoreapp3.1\Gtt.Uc.EntityFramework.dll
+D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+D:\github\IS7012\Week3\RecruitCatYumy\RecruitCatYumy\obj\Debug\netcoreapp3.1\RecruitCatYumy.csproj.AssemblyReference.cache
