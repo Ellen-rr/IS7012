@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\github\\IS7012\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj": {}
+    "C:\\Users\\75074\\Desktop\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj": {}
   },
   "projects": {
-    "D:\\github\\IS7012\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj": {
+    "C:\\Users\\75074\\Desktop\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\github\\IS7012\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj",
+        "projectUniqueName": "C:\\Users\\75074\\Desktop\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj",
         "projectName": "RecruitCatYumy",
-        "projectPath": "D:\\github\\IS7012\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj",
+        "projectPath": "C:\\Users\\75074\\Desktop\\Week3\\RecruitCatYumy\\RecruitCatYumy\\RecruitCatYumy.csproj",
         "packagesPath": "C:\\Users\\75074\\.nuget\\packages\\",
-        "outputPath": "D:\\github\\IS7012\\Week3\\RecruitCatYumy\\RecruitCatYumy\\obj\\",
+        "outputPath": "C:\\Users\\75074\\Desktop\\Week3\\RecruitCatYumy\\RecruitCatYumy\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\75074\\AppData\\Roaming\\NuGet\\NuGet.Config",

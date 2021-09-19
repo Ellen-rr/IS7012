@@ -28,8 +28,8 @@ namespace RecruitCatYumy
         {
             services.AddRazorPages();
 
-            //services.AddDbContext<RecruitCatYumyContext>(options =>
-            //        options.UseSqlServer(Configuration.GetConnectionString("RecruitCatYumyContext")));
+            // services.AddDbContext<RecruitCatYumyContext>(options =>
+            //         options.UseSqlServer(Configuration.GetConnectionString("RecruitCatYumyContext")));
             services.AddGttMem<RecruitCatYumyContext>("010b9bf9-9ff8-4599-b7d7-e77ce309c0e9");
         }
 
