@@ -28,9 +28,8 @@ namespace RecruitCatYumy.Pages.Companies
                 return NotFound();
             }
 
-            Company = await _context.Company
-                .Include(c => c.Industry).FirstOrDefaultAsync(m => m.CompanyId == id);
-
+            
+            Company = await _context.Company.Include(x => x.Candidates).Include(c => c.Industry).FirstOrDefaultAsync(m => m.CompanyId == id);
             if (Company == null)
             {
                 return NotFound();

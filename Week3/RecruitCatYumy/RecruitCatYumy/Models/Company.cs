@@ -54,6 +54,5 @@ namespace RecruitCatYumy.Models
         [Required]
         [Range(0, int.MaxValue)]
         public int NumberOfEmployee { get; set; }
-
     }
 }

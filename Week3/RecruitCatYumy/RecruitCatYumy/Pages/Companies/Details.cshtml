@@ -67,6 +67,46 @@
         </dd>
     </dl>
 </div>
+
+
+
+
+
+
+<div>
+    <table class="table table-bordered">
+        <thead>
+
+            <tr>
+
+                <th>Employee FirstName</th>
+                <th>Employee Last Name</th>
+                <th>Employee Salary</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var emp in Model.Company.Candidates)
+            {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => emp.FirstName)</td>
+                <td>@Html.DisplayFor(modelItem => emp.LastName)</td>
+                <td>@Html.DisplayFor(modelItem => emp.TargetSalary)</td>
+
+            </tr>
+            }
+
+
+            
+
+        </tbody>
+    </table>
+
+</div>
+  
+    
+
+
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Company.CompanyId">Edit</a> |
     <a asp-page="./Index">Back to List</a>
