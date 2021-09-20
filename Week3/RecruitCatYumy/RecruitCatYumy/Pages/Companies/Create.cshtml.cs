@@ -21,7 +21,8 @@ namespace RecruitCatYumy.Pages.Companies
 
         public IActionResult OnGet()
         {
-        ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryId");
+            ViewData["WelcomeMessage"] = "Welcome, please add company!";
+        ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryName");
             return Page();
         }
 

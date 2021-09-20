@@ -21,9 +21,10 @@ namespace RecruitCatYumy.Pages.Candidates
 
         public IActionResult OnGet()
         {
-        ViewData["CompanyId"] = new SelectList(_context.Company, "CompanyId", "CompanyId");
-        ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryId");
-        ViewData["JobTitleId"] = new SelectList(_context.JobTitle, "JobTitleId", "JobTitleId");
+            ViewData["WelcomeMessage"] = "Welcome, create your information";
+        ViewData["CompanyId"] = new SelectList(_context.Company, "CompanyId", "CompanyName");
+        ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryName");
+        ViewData["JobTitleId"] = new SelectList(_context.JobTitle, "JobTitleId", "TheJobTitle");
             return Page();
         }
 

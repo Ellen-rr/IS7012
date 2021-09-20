@@ -21,6 +21,7 @@ namespace RecruitCatYumy.Pages.JobTitles
 
         public IActionResult OnGet()
         {
+            ViewData["WelcomeMessage"] = "Welcome, create your Job Titles";
             return Page();
         }
 

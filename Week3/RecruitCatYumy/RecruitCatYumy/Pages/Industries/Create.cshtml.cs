@@ -21,6 +21,7 @@ namespace RecruitCatYumy.Pages.Industries
 
         public IActionResult OnGet()
         {
+            ViewData["WelcomeMessage"] = "Welcome, create your industries";
             return Page();
         }
 

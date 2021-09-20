@@ -1,12 +1,10 @@
 ﻿@page
 @model RecruitCatYumy.Pages.Industries.CreateModel
 
-@{
-    ViewData["Title"] = "Create";
-}
+@{ ViewData["Title"] = "Create"; }
 
 <h1>Create</h1>
-
+@ViewBag.WelcomeMessage
 <h4>Industry</h4>
 <hr />
 <div class="row">
@@ -20,7 +18,7 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Industry.IndustryRejister" /> @Html.DisplayNameFor(model => model.Industry.IndustryRejister)
+                    <input class="form-check-input" asp-for="Industry.IndustryRegister" /> @Html.DisplayNameFor(model => model.Industry.IndustryRegister)
                 </label>
             </div>
             <div class="form-group">

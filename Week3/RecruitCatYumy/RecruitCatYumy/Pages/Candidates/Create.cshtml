@@ -1,12 +1,10 @@
 ﻿@page
 @model RecruitCatYumy.Pages.Candidates.CreateModel
 
-@{
-    ViewData["Title"] = "Create";
-}
+@{ ViewData["Title"] = "Create"; }
 
-<h1>Create</h1>
-
+<h1>Create Candidates</h1>
+@ViewBag.WelcomeMessage
 <h4>Candidate</h4>
 <hr />
 <div class="row">
@@ -30,15 +28,15 @@
             </div>
             <div class="form-group">
                 <label asp-for="Candidate.CompanyId" class="control-label"></label>
-                <select asp-for="Candidate.CompanyId" class ="form-control" asp-items="ViewBag.CompanyId"></select>
+                <select asp-for="Candidate.CompanyId" class="form-control" asp-items="ViewBag.CompanyId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Candidate.JobTitleId" class="control-label"></label>
-                <select asp-for="Candidate.JobTitleId" class ="form-control" asp-items="ViewBag.JobTitleId"></select>
+                <select asp-for="Candidate.JobTitleId" class="form-control" asp-items="ViewBag.JobTitleId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Candidate.IndustryId" class="control-label"></label>
-                <select asp-for="Candidate.IndustryId" class ="form-control" asp-items="ViewBag.IndustryId"></select>
+                <select asp-for="Candidate.IndustryId" class="form-control" asp-items="ViewBag.IndustryId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Candidate.StartDate" class="control-label"></label>
