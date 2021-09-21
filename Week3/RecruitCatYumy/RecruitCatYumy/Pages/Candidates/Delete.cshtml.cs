@@ -38,6 +38,7 @@ namespace RecruitCatYumy.Pages.Candidates
             {
                 return NotFound();
             }
+
             return Page();
         }
 

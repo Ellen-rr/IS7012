@@ -37,7 +37,7 @@ namespace RecruitCatYumy.Pages.Companies
             {
                 return NotFound();
             }
-           ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryId");
+           ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryName");
             return Page();
         }
 

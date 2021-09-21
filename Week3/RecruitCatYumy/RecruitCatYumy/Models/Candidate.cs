@@ -47,12 +47,12 @@ namespace RecruitCatYumy.Models
         [Required]
         [DataType(DataType.Date)]
         public DateTime? StartDate { get; set; }
-
+        
+        
         [DisplayName("Phone Number")]
         [Required]
+        [StringLength(10, MinimumLength=10,ErrorMessage = "The phone number digit should be exactly 10 ")]
 
-    
-        [StringLength(10, ErrorMessage = "The phone number value should not exceed 10 ")]
         public String PhoneNumber { get; set; }
 
    

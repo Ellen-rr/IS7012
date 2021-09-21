@@ -5,7 +5,7 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Create Company Information</h1>
 @ViewBag.WelcomeMessage
 
 <h4>Company</h4>
@@ -40,12 +40,12 @@
                 <span asp-validation-for="Company.StartDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Company.IndustryId" class="control-label"></label>
+                <label asp-for="Company.IndustryId" class="control-label">Industry</label>
                 <select asp-for="Company.IndustryId" class ="form-control" asp-items="ViewBag.IndustryId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Company.Location" class="control-label"></label>
-                <input asp-for="Company.Location" class="form-control" />
+                <textarea asp-for="Company.Location" class="form-control"></textarea>
                 <span asp-validation-for="Company.Location" class="text-danger"></span>
             </div>
             <div class="form-group">

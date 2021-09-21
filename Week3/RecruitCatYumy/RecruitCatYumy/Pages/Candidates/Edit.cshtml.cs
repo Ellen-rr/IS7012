@@ -39,9 +39,9 @@ namespace RecruitCatYumy.Pages.Candidates
             {
                 return NotFound();
             }
-           ViewData["CompanyId"] = new SelectList(_context.Company, "CompanyId", "CompanyId");
-           ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryId");
-           ViewData["JobTitleId"] = new SelectList(_context.JobTitle, "JobTitleId", "JobTitleId");
+           ViewData["CompanyId"] = new SelectList(_context.Company, "CompanyId", "CompanyName");
+           ViewData["IndustryId"] = new SelectList(_context.Industry, "IndustryId", "IndustryName");
+           ViewData["JobTitleId"] = new SelectList(_context.JobTitle, "JobTitleId", "TheJobTitle");
             return Page();
         }
 

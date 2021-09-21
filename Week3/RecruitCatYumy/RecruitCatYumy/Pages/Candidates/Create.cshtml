@@ -3,7 +3,7 @@
 
 @{ ViewData["Title"] = "Create"; }
 
-<h1>Create Candidates</h1>
+<h1>Create Candidate Information</h1>
 @ViewBag.WelcomeMessage
 <h4>Candidate</h4>
 <hr />
@@ -27,15 +27,15 @@
                 <span asp-validation-for="Candidate.TargetSalary" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Candidate.CompanyId" class="control-label"></label>
+                <label asp-for="Candidate.CompanyId" class="control-label">Company</label>
                 <select asp-for="Candidate.CompanyId" class="form-control" asp-items="ViewBag.CompanyId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Candidate.JobTitleId" class="control-label"></label>
+                <label asp-for="Candidate.JobTitleId" class="control-label">Job Title</label>
                 <select asp-for="Candidate.JobTitleId" class="form-control" asp-items="ViewBag.JobTitleId"></select>
             </div>
             <div class="form-group">
-                <label asp-for="Candidate.IndustryId" class="control-label"></label>
+                <label asp-for="Candidate.IndustryId" class="control-label">Industry</label>
                 <select asp-for="Candidate.IndustryId" class="form-control" asp-items="ViewBag.IndustryId"></select>
             </div>
             <div class="form-group">
@@ -50,7 +50,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Candidate.Address" class="control-label"></label>
-                <input asp-for="Candidate.Address" class="form-control" />
+                <textarea asp-for="Candidate.Address" class="form-control"></textarea>
                 <span asp-validation-for="Candidate.Address" class="text-danger"></span>
             </div>
             <div class="form-group">
