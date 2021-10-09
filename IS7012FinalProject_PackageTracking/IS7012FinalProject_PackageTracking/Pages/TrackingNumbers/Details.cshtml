@@ -1,0 +1,43 @@
+﻿@page
+@model IS7012FinalProject_PackageTracking.Pages.TrackingNumbers.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>TrackingNumber</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TrackingNumber.User)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TrackingNumber.User.FullName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TrackingNumber.Package)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TrackingNumber.Package.PackageName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TrackingNumber.Deliverer)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TrackingNumber.Deliverer.DelivererName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TrackingNumber.TrackingNumberId)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TrackingNumber.trackingNumber)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.TrackingNumber.TrackingNumberId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

@@ -1,0 +1,66 @@
+﻿@page
+@model IS7012FinalProject_PackageTracking.Pages.Deliverers.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Deliverer[0].DelivererCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Deliverer[0].DelivererName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Deliverer[0].DateDelivered)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Deliverer[0].DeliveryStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Deliverer) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DelivererCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DelivererName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateDelivered)
+            </td>
+            <td>
+                @if (item.DeliveryStatus)
+                {
+                <div>
+                    <img class="align-content-center" src="/pics/Received.gif" alt="cardimage" width="50" height="50">
+                    @*<span class="badge badge-warning">Received</span>*@
+                </div>
+                }
+                else
+                {
+                <div>
+                    <span class="badge badge-secondary">On the Way</span>
+                </div>
+                }
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.DelivererId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.DelivererId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.DelivererId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

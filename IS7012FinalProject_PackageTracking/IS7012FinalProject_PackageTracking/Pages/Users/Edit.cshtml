@@ -1,0 +1,80 @@
+﻿@page
+@model IS7012FinalProject_PackageTracking.Pages.Users.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="User.UserId" />
+            <div class="form-group">
+                <label asp-for="User.UserF" class="control-label"></label>
+                <input asp-for="User.UserF" class="form-control" />
+                <span asp-validation-for="User.UserF" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserL" class="control-label"></label>
+                <input asp-for="User.UserL" class="form-control" />
+                <span asp-validation-for="User.UserL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserStreet" class="control-label"></label>
+                <input asp-for="User.UserStreet" class="form-control" />
+                <span asp-validation-for="User.UserStreet" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserRoom" class="control-label"></label>
+                <input asp-for="User.UserRoom" class="form-control" />
+                <span asp-validation-for="User.UserRoom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserState" class="control-label"></label>
+                <input asp-for="User.UserState" class="form-control" />
+                <span asp-validation-for="User.UserState" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserZip" class="control-label"></label>
+                <input asp-for="User.UserZip" class="form-control" />
+                <span asp-validation-for="User.UserZip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserCountry" class="control-label"></label>
+                <input asp-for="User.UserCountry" class="form-control" />
+                <span asp-validation-for="User.UserCountry" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserPhone" class="control-label"></label>
+                <input asp-for="User.UserPhone" class="form-control" />
+                <span asp-validation-for="User.UserPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.UserEmail" class="control-label"></label>
+                <input asp-for="User.UserEmail" class="form-control" />
+                <span asp-validation-for="User.UserEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="User.DateOfShip" class="control-label"></label>
+                <input asp-for="User.DateOfShip" class="form-control" />
+                <span asp-validation-for="User.DateOfShip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

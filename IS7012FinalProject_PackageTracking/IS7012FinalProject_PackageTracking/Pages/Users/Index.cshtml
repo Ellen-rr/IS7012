@@ -1,0 +1,101 @@
+﻿@page
+@model IS7012FinalProject_PackageTracking.Pages.Users.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table-hover">
+    <thead>
+        <tr>
+@*<th>
+                @Html.DisplayNameFor(model => model.User[0].UserF)
+            </th>*@
+                @*<th>
+                @Html.DisplayNameFor(model => model.User[0].UserStreet)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].UserRoom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].UserState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].UserZip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].UserCountry)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].FullAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].UserPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].UserEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User[0].DateOfShip)
+            </th>
+            <th></th>
+        </tr>
+
+
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model.User)
+        {
+            <tr>
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.UserF)
+                    </td>*@
+                @*
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserStreet)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserRoom)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserState)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserZip)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserCountry)
+                    </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserPhone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserEmail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DateOfShip)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.UserId">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.UserId">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.UserId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

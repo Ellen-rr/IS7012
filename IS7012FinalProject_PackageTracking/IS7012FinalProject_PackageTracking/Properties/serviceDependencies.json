@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:IS7012FinalProject_PackageTrackingContext"
+    }
+  }
+}

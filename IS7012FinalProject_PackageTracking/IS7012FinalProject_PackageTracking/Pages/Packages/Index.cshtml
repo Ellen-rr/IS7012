@@ -1,0 +1,54 @@
+﻿@page
+@model IS7012FinalProject_PackageTracking.Pages.Packages.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Package[0].PackageName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Package[0].PackageWeight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Package[0].User)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Package[0].Deliverer)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Package) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackageName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PackageWeight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.User.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Deliverer.DelivererName)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PackageId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PackageId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PackageId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
